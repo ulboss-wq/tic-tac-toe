@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <style>
+        #field td {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 36px;
+        }
+        h1 {
+            font-size: 50px;
+            color: black; 
+        }
+        button {
+            background-color: #790604;
+            font-size: 18px;
+            color: black;
+            border: 2px solid black;
+            border-radius: 5%;
+            width: 200px;
+            height: 50px;
+            margin: 10px;
+        }
+        #scoreboard {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body style="background-color: #790604;">
+    <h1 id="header" align="center">Tic Tac Toe</h1>
+    <div align="center" id="scoreboard">Score - X: 0 | O: 0</div>
+    <table id="field" align="center">
+        <tr> 
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr> 
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr> 
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <div align="center">
+        <button id="start-button" onclick="startGame()">Restart Game</button>
+        <button onclick="choosePlayer('X')">Player X Starts</button>
+        <button onclick="choosePlayer('O')">Player O Starts</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
